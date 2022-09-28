@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Post</title>
+</head>
+<body>
+    <header>
+        <h1>Post on Index dot html</h1>
+        <a href="../index.html">Home</a>
+    </header>
+    <article id="post-text">
+        <h2>Second Post</h2>
+            <p>I have a couple of pages now in this tediously-typed-in static HTML site. Of course I'm starting to miss having some code to put it all together for me. Being uncomfortable, and remembering things that static site generators or web frameworks do for us, is part of the point.</p>
+
+            <p>Now that there are two posts, it's very tempting to put at least a "previous" button in here. How much complexity should I build in here before starting to think about how I should automate it? What's the next post? What's the rest of <em>this</em> post??</p> 
+
+            <p>Well, here's one thought: I'd like to work out a version of what my templates should look like, before turning to software to implement them. This is a solid reason to resist skipping to solutions for automation.</p>
+
+        <section>
+            <h3>So what did I end up changing?</h3>
+            <ul>
+                <li>Added a "previous" button. No "next" button until I write another entry, though.</li>
+
+                <li>Also: I created a "page" at <a href="http://localhost:8000/pages/index-screenshots.html">http://localhost:8000/pages/index-screenshots.html</a>, where I can collect screenshots of what my index page looks like at any given time. Do I need this? Not sure, but if I keep changing things, I may be interested to see a record of how they looked at a given point. And I can't go back in time to start keeping a record. So this is there to be deleted if needed.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Rubber-ducking</h3>
+                <ul>
+                    <li>
+                        <p>Why is an unstyled HTML document so painful to look at?</p>
+                        
+                        <p>It's really not so bad if I narrow my browser window. I let that simmer for a bit and concluded that taking the edge off the white background and adding margins to left and right would do wonders. Something to keep in mind when I add a stylesheet!
+                        </p>
+
+                        <p>Total duh, but gimme a break. I'm trying to be systematic.</p> 
+                    </li>
+                    <li>
+                        <p>What goes in the next post? I'm running out of clear purpose already! I don't cave and add a stylesheet already, do I?</p>
+
+                        <p>No, I don't think so. A screen reader user with total blindness is not going to see my styling, so the page has to be as complete and comprehensible as possible without it. If I add CSS as I go, I'll likely be distracted by it and let semantic wooliness creep in.</p> 
+                        
+                        <p>So, the next thing is to add something to the DOM. </p>
+                            
+                        
+                        
+                    </li>
+                </ul>
+        </section>
+        <section>
+            <h3>Start of a list of things a site generator or web framework can help with</h3>
+            <ul>
+                <li>Tem. Plates.</li>
+                <li>RSS feeds</li>
+                <li>"next" and "previous" buttons</li>
+                <li>pagination</li>
+                <li>generation of indexes and other views
+                </li>
+                <li>making stuff from metadata</li>
+            </ul>
+        </section>
+        <section>
+            <h3>This project's current directory structure</h3>
+            <pre><code>
+                assets/ 
+                    index-2022-09-17.png
+                pages/ 
+                    index-screenshots.html 
+                posts/
+                    hello-world.html
+                    second-post.html
+                index.html
+            </code></pre>
+        </section>
+        <section>
+            <h3>Modification dates</h3>
+            <ul>
+                <li>2022 Sept 17</li>
+            </ul>
+        </section>
+
+        <a href="/posts/hello-world.html">Previous</a>
+
+    </article> 
+</body>
+</html>
